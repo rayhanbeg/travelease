@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Inter', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Mulish', sans-serif;
+}
+
+/* ----nav section------- */
+
+.header{
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.nav{
+    min-height: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+}ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+.nav-list ul{
+    display: flex;
+    gap: 40px;
+    
+}
+.nav-img-title{
+    display: flex;
+    align-items: center;
+}
+.nav-img-title img{
+    width: 3rem;
+}
+.ease{
+    color: #FF5400;
+    
+}
+.nav-title{
+    font-size: 2.2rem;
+}
+.Travel{
+    color: #131318;
+
+
+}
+/* ----banner-section---- */
+
+.banner-section{
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.banner-container{
+    min-height: 500px;
+    border-radius: 16px;
+    margin-top: 40px;
+   
+    
+}
+.banner-img{
+    max-width: 1170px;
+   min-height: 500px;
+    /* margin: 40px 170px; */
+    margin: 0 auto;
+    
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('./Images/Group\ 13\ \(1\)\ \(1\).png');
+   
+}
+.banner-title{
+    color: #FFF;
+    font-size: 4rem;
+}
+.banner-description{
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.banner-text{
+    text-align: center;
+    padding-top: 100px;
+}
+.banner-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.btn-banner{
+    border-radius: 5px;
+    background: #FF5400;
+    color: #FFF;
+    border: none;
+    width: 174px;
+    height:52px;
+    font-size: 1.1rem;
+
+}
+.banner-form #when, #select-type, #where, .btn-banner{
+    width: 174px;
+    height: 52px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 0 20px;
+}
+
+
+/* ---media query--- */
+/*--------- medium device or mobile------ */
+
+
+@media screen and (max-width:600px) {
+    .nav{
+      
+    }
+    .banner-container{
+        padding: 20px 20px;
+    }
+    .banner-input{
+        margin: 0 25%;
+    }
+    .banner-form #when, #select-type, #where, .btn-banner{
+        margin-top: 20px;
+    }
+    .btn-banner{
+        margin-bottom: 20px;
+    }
+    .banner-title, .banner-description{
+        width: 100%;
+    }
+}
+
+
