@@ -8,6 +8,17 @@
 font-family: 'Merriweather', serif;
 font-family: 'Mulish', sans-serif;
 }
+/* ----button-primary-- */
+.btn-primary{
+    border-radius: 5px;
+    background: #FF5400;
+    color: #FFF;
+    border: none;
+    width: 174px;
+    height:52px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
 
 
 /* ----nav section------- */
@@ -116,23 +127,16 @@ li a{
 
 .populars-tours{
     display: flex;
+    /* align-items: center; */
     margin: 50px 170px;
+    padding-top: 50px;
     gap: 50px;
 }
 .text-tour p{
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 15px;
 }
-.btn-tour{
-    border-radius: 5px;
-    background: #FF5400;
-    color: #FFF;
-    border: none;
-    width: 174px;
-    height:52px;
-    font-size: 1.1rem;
-    margin-top: 20px;
-}
+
 .popular-title{
     color: #131318;
     font-size: 2.5rem;
@@ -165,9 +169,11 @@ li a{
 .destination-title{
     color: #131318;
     font-size: 2.5rem;
+    padding-bottom: 20px;
 }
 .destination-section .destination-title,p{
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .img3{
@@ -317,6 +323,108 @@ li a{
     
 }
 
+/* ------simple-section--- */
+
+.simpe-place-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    /* align-items: center; */
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 100px;
+}
+.simple-place-title{
+    padding-bottom: 20px;
+}
+.simple-place-img{
+    position: relative;
+}
+.simple-place-img h2{
+    position: absolute;
+    color: #FFF;
+    top: 48%;
+    right: 80px;
+}
+.simple-place-description{
+    color: #84848d;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+.simple-place-content .p1{
+    color: #131318;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+/* .simple-place-img{
+    position: relative;
+} */
+
+.newsletter-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 170px;
+    gap:20px;
+}
+.name{
+    width: 300px;
+    height: 52px;
+    margin-top: 15px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+}
+.email{
+    width: 300px;
+    height: 52px;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding-left: 10px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+}
+.newsletter-title{
+    color: #131318;
+    font-size: 1.5rem;
+}
+.newsletter-section p{
+    color: #5A5A5D;
+    font-size: 1rem;
+}
+.newsletter-content{
+    border: 1px solid #FF5400;
+    padding: 40px;
+    border-radius: 16px;
+}
+.newsletter-img{
+    position: relative;
+}
+.discount{
+    position:absolute;
+ height:100px;
+ width: 250px;
+ background-color: #FF5400;
+ left: 60%;
+ top: 61%;
+ transform: rotate(-35deg);
+ border-radius: 16px;
+
+}
+.travel{
+    color: #FFF;
+    font-size: 1.rem;
+    padding-left: 25%;
+
+}
+.save{
+    color: #FFF;
+    font-size: 1.6rem;
+    padding-left: 15%;
+    
+    
+}
+
 
 /* ---media query--- */
 /*--------- medium device or mobile------ */
@@ -431,9 +539,60 @@ li a{
     .card3{
         width: 90%;
         margin-top: 20px;
-        margin-left: 20px;
-        
+        margin-left: 20px; 
+    }
+    .simpe-place-section{
+       flex-direction: column;
+       margin: 20px 20px;
+      
 
+    }
+    .simple-place-content p{
+        width: 350px;
+        /* padding: 10px 50px; */
+
+    }
+    .simple-place-content{
+        /* margin-right: 200px; */
+    }
+    .simple-place-content h1{
+        width: 240px;
+    }
+    .simple-place-img img{
+      width: 330px;
+      
+    }
+    .simple-place-img h2{
+    /* padding-bottom: 200px; */
+    padding-left: 80px;
+    }
+    .simple-place-title{
+       text-align: center;
+       padding-left: 80px;
+    }
+    .newsletter-section{
+        flex-direction: column;
+        padding: 20px 20px;
+        
+    }
+    .newsletter-content{
+        width: 330px;
+    }
+    .newsletter-content input{
+      width: 250px;
+    }
+    .newsletter-img img{
+       width: 330px;
+    }
+    .discount{
+        width: 120px;
+        
+    }
+    .travel{
+        font-size: 8px;
+    }
+    .save{
+        font-size: 12px;
     }
 }
 
