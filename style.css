@@ -397,6 +397,7 @@ li a{
     padding-left: 30px;
     padding-top: 20px;
 }
+
 .recent-visit{
     height: 500px;
     background-image: url('./pexels-symeon-ekizoglou-2105785.jpg');
@@ -659,6 +660,7 @@ footer{
        margin: 20px 20px;
        
     }
+  
     .pic, .pic2{
 
     }
@@ -674,6 +676,7 @@ footer{
     }
     .newsletter-content{
         width: 330px;
+        margin-top: 50px;
     }
     .newsletter-content input{
       width: 250px;
@@ -692,7 +695,7 @@ footer{
         font-size: 12px;
     }
     .footer-description, .footer-img-title{
-      margin: 20px 10px;
+      margin:  10px;
       padding-right: 100px;
       padding-left: 100px;
       padding-bottom: 0px;
