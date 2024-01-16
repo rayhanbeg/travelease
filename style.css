@@ -365,43 +365,36 @@ li a{
 
 /* --------bounus part from me. recently vistied---------- */
 
-.recent-visit{
-    display: flex;
-    gap: 30px;
+.world-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 16px;
     margin-left: 170px;
     margin-right: 170px;
-    margin-top: 100px;
+    margin-top: 50px;
+   
 }
-.recent-img img{
-  width: 100%;
-  border-radius: 16px;
-  
-  
+.world-wide{
+    
 }
-.recent-container p{
-    text-align:left ;
-    font-size: 1rem;
-    color: #313137;
-    margin-top: 20px;
-}
-.recent-container h2{
-    padding-bottom: 20px;
+.grid-item {
+    /* overflow: hidden; */
 }
 
-.recent-visit p{
-    color: #FFF;
-    padding-left: 30px;
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
 }
-.recent-title{
-    color:tomato;
-    padding-left: 30px;
-    padding-top: 20px;
+.world-content{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
 }
-
-.recent-visit{
-    height: 500px;
-    background-image: url('./pexels-symeon-ekizoglou-2105785.jpg');
-    border-radius: 16px;
+.we{
+    color: #FF5400;
 }
 
 /* .simple-place-img{
@@ -583,11 +576,12 @@ footer{
     .img4 img{
        width: 100%;
     }
-    .destination-sectio p{
-     
+    .destination-description{
+     margin: 10px 10px;
+     padding: 10px 30px;
     }
     .destination-title{
-     
+     margin: 10px 10px;
     }
     .imgtow h3{
         color: #FFF;
@@ -606,8 +600,15 @@ footer{
         margin-left: 20px;
         
     }
+    .choose-title{
+     margin: 10px 20px;
+     padding: 0 20px;
+    }
     .choose-description{
        width: 394px;
+       margin: 10px 20px;
+       padding-right: 20px;
+       
     }
     .card1, .card2{
        width: 120%;
@@ -616,9 +617,7 @@ footer{
        margin-right: 20px;
         
     }
-    main{
-     width: 385px;
-    }
+    
     .card3{
         width: 90%;
         margin-top: 20px;
@@ -644,31 +643,24 @@ footer{
     }
     .simple-place-img img{
       width: 330px;
+      margin-left: 20px;
       
     }
     .simple-place-img h2{
     /* padding-bottom: 200px; */
-    padding-left: 80px;
+    padding-left: 110px;
+    
     }
     .simple-place-title{
        text-align: center;
        padding-left: 80px;
     }
-
-    .recent-visit{
-       flex-direction: column;
-       margin: 20px 20px;
-       
-    }
-  
-    .pic, .pic2{
-
-    }
-    .recent-img img{
-        width: 35%;
-        height: 100%;
-        margin: 10px 20px;
-    }
+     .world-img{
+        margin: 0 20px;
+     }
+     .world-content{
+        padding: 0 20px;
+     }
     .newsletter-section{
         flex-direction: column;
         padding: 20px 20px;
@@ -677,12 +669,14 @@ footer{
     .newsletter-content{
         width: 330px;
         margin-top: 50px;
+        margin-left: 20px;
     }
     .newsletter-content input{
       width: 250px;
     }
     .newsletter-img img{
        width: 330px;
+       margin-left: 20px;
     }
     .discount{
         width: 120px;
@@ -700,6 +694,16 @@ footer{
       padding-left: 100px;
       padding-bottom: 0px;
 
+    }
+    footer{
+       width: 100%;
+       height: 100%;
+    }
+    .copyright{
+     padding-top: 340px;
+    }
+    .footer-img-title{
+      padding-top: 10px;
     }
 }
 
